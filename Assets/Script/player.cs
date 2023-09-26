@@ -178,19 +178,20 @@ public class player : MonoBehaviour
     {
       Debug.Log("Trigger - 碰到:"+ Coll.gameObject.name) ;
       //印出Trigger -觸發:碰撞物件的名字
-      if (Coll.gameObject.tag =="firut")
+     
+      if (Coll.gameObject.tag =="B1")
       { 
         Destroy(Coll.gameObject);
-        s += 2;
+        s += 1;
         Debug.Log(s);
         _audioSource.Play();
         stext.text = s.ToString(); // 將數值轉換成字串
         final.text = s.ToString();
       }
-      if (Coll.gameObject.tag =="B1")
+      if (Coll.gameObject.tag =="A2")
       { 
         Destroy(Coll.gameObject);
-        s += 1;
+        s += 2;
         Debug.Log(s);
         _audioSource.Play();
         stext.text = s.ToString(); // 將數值轉換成字串

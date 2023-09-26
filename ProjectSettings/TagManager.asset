@@ -4,13 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - firut
   - M5
   - KO3
   - B1
   - P4
   - Enemy
   - EnemyHIt
+  - A2
   layers:
   - Default
   - TransparentFX
