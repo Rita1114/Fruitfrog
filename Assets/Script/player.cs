@@ -26,14 +26,9 @@ public class player : MonoBehaviour
     [Header("目前的水平速度")]
     int key =0;
     public float speedX;
-    
-
     [Header("目前的水平方向")]
     public float horizontalDirection;//數值會在-1~1之間
-    
-
     const string HORIZONTAL = "Horizontal";
-    
     
     [Header("水平推力")]
     [Range(0,150)]
@@ -51,9 +46,8 @@ public class player : MonoBehaviour
        speedY = playerRigidbody2D.velocity.y;
        float newSpeedX=Mathf.Clamp(speedX, -maxSpeedX, maxSpeedX);
        playerRigidbody2D.velocity = new Vector2(newSpeedX,speedY);
-       }
-
-      [Header("垂直向上推力")]
+      }
+     [Header("垂直向上推力")]
        public float yForce;
        void TryJump()
        {
@@ -63,18 +57,31 @@ public class player : MonoBehaviour
            Debug.Log("jump");
            animator.SetBool("jumping",true);
          }
+         else if (Input.GetKeyDown(KeyCode.Space)&&animator.GetBool("jumping")==true)
+         {
+           playerRigidbody2D.velocity = new Vector2(playerRigidbody2D.velocity.x,yForce*1);
+           animator.SetBool("Double",true);
+           animator.SetBool("jumping",false);
+         }
+         else
+         {
+           animator.SetBool("Double",false);
+           
+         }
        
        }
        //切換動畫
        void switchAni()
        {
          animator.SetBool("idle",false);
+         
          if (animator.GetBool("jumping"))
          {
            if ((playerRigidbody2D.velocity.y<0))
            {
              animator.SetBool("falling",true);
              animator.SetBool("jumping",false);
+             animator.SetBool("Double",false);
            }
          }
          else if (isHurt)
@@ -108,23 +115,20 @@ public class player : MonoBehaviour
              return grounded;
            }
          }
-
          [Header("感應地板的距離")]
          [Range(0,0.5f)]
          public float distance;
-
          [Header("偵測地板的射線起點")]
          public Transform groundCheck;
-
          [Header("地面圖層")]
          public LayerMask groundLayer;
-
          public bool grounded;
 
     void Awake()
     {
            _audioSource = this.gameObject.AddComponent<AudioSource>();
            _audioSource.clip = audioClip;
+           
     }
 
     // Start is called before the first frame update
@@ -150,8 +154,7 @@ public class player : MonoBehaviour
       {
         MovementX ();
       }
-       
-       ControlSpeed();
+      ControlSpeed();
        TryJump();
        switchAni();
        speedX=playerRigidbody2D.velocity.x;
@@ -169,10 +172,6 @@ public class player : MonoBehaviour
     }
     
     }
-
-
-
-
     //水果分數
     void OnTriggerEnter2D(Collider2D Coll)
     {
@@ -251,12 +250,8 @@ public class player : MonoBehaviour
           animator.SetBool("hit",false);
         }
       }
-      
-      }
-     
-     
-       
     }
+}
 
 
 
