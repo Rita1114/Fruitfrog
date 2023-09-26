@@ -75,7 +75,7 @@ public class player : MonoBehaviour
        {
          animator.SetBool("idle",false);
          
-         if (animator.GetBool("jumping"))
+         if (animator.GetBool("jumping")&& !coll.IsTouchingLayers(groundLayer))
          {
            if ((playerRigidbody2D.velocity.y<0))
            {

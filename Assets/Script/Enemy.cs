@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour
         EnemyMove();
     }
 
+    //走路動畫(來回)
     void EnemyMove()
     {
         if (face)
