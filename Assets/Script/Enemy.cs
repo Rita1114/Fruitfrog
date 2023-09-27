@@ -57,7 +57,6 @@ public class Enemy : MonoBehaviour
             }
         }
     }
-
     void EnmeyJump()
     {
         if (coll.IsTouchingLayers(Ground))
