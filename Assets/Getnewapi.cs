@@ -11,6 +11,8 @@ public class Getnewapi : MonoBehaviour
     private  string url ="https://random-data-api.com/api/v2/users";
 
     public Text content;
+
+    public Mydate _mydate;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,16 +34,18 @@ public class Getnewapi : MonoBehaviour
         {
             string responsedate = webRequest.downloadHandler.text;
 
-            List<MyDate> myDates = JsonUtility.FromJson<List<MyDate>>(responsedate);
+            List<Mydate> myDates = JsonUtility.FromJson<List<Mydate>>(responsedate);
+            Debug.Log("Data Count: " + myDates.Count);
            
             myDates = myDates.OrderBy(date => date.Password).ToList();
             
-            foreach (MyDate date in myDates)
+            
+            foreach (Mydate date in myDates)
             {
                 Debug.Log("name:" + date.ID + ", uid" +date.Uid);
             }
 
-            content.text =responsedate;
+            content.text =myDates.ToString();
         }
         else
         {
@@ -49,10 +53,5 @@ public class Getnewapi : MonoBehaviour
             Debug.Log("Error"+webRequest.error);
         }
     }
-    public class MyDate
-    {
-        public string ID { get; set;}
-        public string Uid { get; set; }
-        public int Password { get; set; }
-    }
+    
 }

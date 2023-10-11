@@ -18,6 +18,7 @@ public class player : MonoBehaviour
     public float WaitTime = 3;
     private bool isHurt;//默認為false
     private Animator animator;
+    public Animator Disanimtor;
 
 
 
@@ -180,7 +181,11 @@ public class player : MonoBehaviour
      
       if (Coll.gameObject.tag =="B1")
       { 
-        Destroy(Coll.gameObject);
+        if (Disanimtor!=null)
+        {
+          Disanimtor.SetTrigger("collected");
+        }
+        //Destroy(Coll.gameObject);
         s += 1;
         Debug.Log(s);
         _audioSource.Play();
@@ -188,10 +193,15 @@ public class player : MonoBehaviour
         final.text = s.ToString();
       }
       if (Coll.gameObject.tag =="A2")
-      { 
-        Destroy(Coll.gameObject);
+      {
+        /*if (Disanimtor!=null)
+        {
+          Disanimtor.SetTrigger("collected");
+        }*/
+        
         s += 2;
         Debug.Log(s);
+        
         _audioSource.Play();
         stext.text = s.ToString(); // 將數值轉換成字串
         final.text = s.ToString();
