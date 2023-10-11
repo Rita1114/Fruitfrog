@@ -884,9 +884,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -896,8 +899,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -918,10 +921,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -3996,9 +4003,153 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Terrain Sliced (16x16)_123: -3628254751460514816
+      Terrain Sliced (16x16)_104: -2448848189860875878
+      Terrain Sliced (16x16)_24: -5809228510748496589
+      Terrain Sliced (16x16)_0: 2902273802658180415
+      Terrain Sliced (16x16)_15: 7169940465979160916
+      Terrain Sliced (16x16)_9: 3320371760038065978
+      Terrain Sliced (16x16)_97: -993336646184493300
+      Terrain Sliced (16x16)_40: 7611417825057063656
+      Terrain Sliced (16x16)_54: 6890068618988330050
+      Terrain Sliced (16x16)_90: -3843259800067296564
+      Terrain Sliced (16x16)_17: 4467090498197927051
+      Terrain Sliced (16x16)_16: -7440051457103671695
+      Terrain Sliced (16x16)_52: 7946256270314989614
+      Terrain Sliced (16x16)_63: -1520349868239849904
+      Terrain Sliced (16x16)_71: 1585496353899916297
+      Terrain Sliced (16x16)_70: 602565233317184352
+      Terrain Sliced (16x16)_43: -2399930468311409242
+      Terrain Sliced (16x16)_101: -9188719593411773727
+      Terrain Sliced (16x16)_47: -5294283388359086134
+      Terrain Sliced (16x16)_114: -4862145018235712340
+      Terrain Sliced (16x16)_103: 8639778707392933759
+      Terrain Sliced (16x16)_99: -5966260982333671524
+      Terrain Sliced (16x16)_4: -1523456763730081660
+      Terrain Sliced (16x16)_119: -7051467509170499978
+      Terrain Sliced (16x16)_45: -7940845750058973481
+      Terrain Sliced (16x16)_64: 6159360690136916673
+      Terrain Sliced (16x16)_53: -5960054110766830253
+      Terrain Sliced (16x16)_115: -1821587738259982590
+      Terrain Sliced (16x16)_77: -6867572554444258182
+      Terrain Sliced (16x16)_85: 1663890477860976835
+      Terrain Sliced (16x16)_122: 7329022666772186519
+      Terrain Sliced (16x16)_2: 5021068500436517841
+      Terrain Sliced (16x16)_137: -8347369093276143272
+      Terrain Sliced (16x16)_93: 3913395052427078262
+      Terrain Sliced (16x16)_113: -5711621488445660307
+      Terrain Sliced (16x16)_5: -7892170592577072746
+      Terrain Sliced (16x16)_30: -5978227758274915419
+      Terrain Sliced (16x16)_72: -8001090831338918766
+      Terrain Sliced (16x16)_81: -2389962291426223365
+      Terrain Sliced (16x16)_107: 816742201711421343
+      Terrain Sliced (16x16)_100: 3981212539099115471
+      Terrain Sliced (16x16)_108: 8751896361266258078
+      Terrain Sliced (16x16)_38: -6555962669166431313
+      Terrain Sliced (16x16)_62: -2935998901810895314
+      Terrain Sliced (16x16)_35: -5632686409887027556
+      Terrain Sliced (16x16)_28: 5436956145924599635
+      Terrain Sliced (16x16)_127: 612480059439069667
+      Terrain Sliced (16x16)_132: 4943496712749525036
+      Terrain Sliced (16x16)_125: -5022048723515609751
+      Terrain Sliced (16x16)_8: 5999578222934003670
+      Terrain Sliced (16x16)_13: -4552142719482407309
+      Terrain Sliced (16x16)_37: 2755255159657979572
+      Terrain Sliced (16x16)_50: 5092602125442828303
+      Terrain Sliced (16x16)_83: 4071517252002933723
+      Terrain Sliced (16x16)_60: -3406550741011873913
+      Terrain Sliced (16x16)_46: 3055956325679830229
+      Terrain Sliced (16x16)_31: -3726844052192366309
+      Terrain Sliced (16x16)_110: 8465317165198945509
+      Terrain Sliced (16x16)_21: -6704229216346816907
+      Terrain Sliced (16x16)_26: 1622654905497061536
+      Terrain Sliced (16x16)_106: -2877499046106404304
+      Terrain Sliced (16x16)_59: -4657060171248818949
+      Terrain Sliced (16x16)_61: 1047224608060278570
+      Terrain Sliced (16x16)_82: -4583147616382794264
+      Terrain Sliced (16x16)_102: -356001123769039504
+      Terrain Sliced (16x16)_135: 7252638262014808286
+      Terrain Sliced (16x16)_96: -6944131665939194213
+      Terrain Sliced (16x16)_111: 3348348675200897663
+      Terrain Sliced (16x16)_41: 932416410304274468
+      Terrain Sliced (16x16)_91: -7186463568601474912
+      Terrain Sliced (16x16)_130: -6514728287271593452
+      Terrain Sliced (16x16)_10: -3574895735335355282
+      Terrain Sliced (16x16)_105: -1588334017198182579
+      Terrain Sliced (16x16)_118: 902525005498473353
+      Terrain Sliced (16x16)_3: 7452560645506918919
+      Terrain Sliced (16x16)_75: 5288882739650379491
+      Terrain Sliced (16x16)_1: -6150033036582198407
+      Terrain Sliced (16x16)_87: -7750482047274925513
+      Terrain Sliced (16x16)_57: 7979020265591117037
+      Terrain Sliced (16x16)_74: 8259818757600442966
+      Terrain Sliced (16x16)_88: -5528154000191010836
+      Terrain Sliced (16x16)_78: -8158505108494717169
+      Terrain Sliced (16x16)_79: -1049226019396941020
+      Terrain Sliced (16x16)_120: 6533279997520759342
+      Terrain Sliced (16x16)_27: 3866701048129057578
+      Terrain Sliced (16x16)_133: 5577559758858527025
+      Terrain Sliced (16x16)_6: -4782553538942834977
+      Terrain Sliced (16x16)_140: 121552405696679771
+      Terrain Sliced (16x16)_39: 8496418937709825729
+      Terrain Sliced (16x16)_109: 6703297672328271277
+      Terrain Sliced (16x16)_44: -5876794703336190428
+      Terrain Sliced (16x16)_56: -5897045102619775901
+      Terrain Sliced (16x16)_86: -4967778771792927893
+      Terrain Sliced (16x16)_95: -4309571456439829745
+      Terrain Sliced (16x16)_112: -8538501149817158768
+      Terrain Sliced (16x16)_23: 4803987686719627836
+      Terrain Sliced (16x16)_68: 754000179093939958
+      Terrain Sliced (16x16)_14: -7107133873430283805
+      Terrain Sliced (16x16)_136: 1872644753115356407
+      Terrain Sliced (16x16)_89: 8956028227566023672
+      Terrain Sliced (16x16)_131: 5592807734871008063
+      Terrain Sliced (16x16)_139: 695276389285509736
+      Terrain Sliced (16x16)_18: -7186697262807201019
+      Terrain Sliced (16x16)_42: -3104653398138783639
+      Terrain Sliced (16x16)_129: 265309367955290906
+      Terrain Sliced (16x16)_69: -951806941376393605
+      Terrain Sliced (16x16)_80: -119081074771976983
+      Terrain Sliced (16x16)_98: -2559238278499823807
+      Terrain Sliced (16x16)_128: -2167002966568024001
+      Terrain Sliced (16x16)_36: -1677492880468287587
+      Terrain Sliced (16x16)_29: -8185196207481930053
+      Terrain Sliced (16x16)_134: -3173897939724825349
+      Terrain Sliced (16x16)_73: -8166057216685675774
+      Terrain Sliced (16x16)_142: -4344652744860095212
+      Terrain Sliced (16x16)_22: 7040740401427105950
+      Terrain Sliced (16x16)_33: -6153399637600640786
+      Terrain Sliced (16x16)_116: 8177655233620157279
+      Terrain Sliced (16x16)_124: 5747362120649924051
+      Terrain Sliced (16x16)_11: -4669499228856403857
+      Terrain Sliced (16x16)_94: 8683433444412030562
+      Terrain Sliced (16x16)_117: 3519973246731882376
+      Terrain Sliced (16x16)_84: 616216867044081436
+      Terrain Sliced (16x16)_92: -7297930431790078221
+      Terrain Sliced (16x16)_25: 7878138426401487865
+      Terrain Sliced (16x16)_51: -129274384365622693
+      Terrain Sliced (16x16)_7: 3925165532358984209
+      Terrain Sliced (16x16)_20: -2744604866611053843
+      Terrain Sliced (16x16)_12: 5716825295704421368
+      Terrain Sliced (16x16)_138: -426067407094920494
+      Terrain Sliced (16x16)_19: 2126573664597023339
+      Terrain Sliced (16x16)_49: -7707774848039490712
+      Terrain Sliced (16x16)_67: -5354658925233994142
+      Terrain Sliced (16x16)_76: -5753205145478194888
+      Terrain Sliced (16x16)_141: -2946923001845503787
+      Terrain Sliced (16x16)_32: 6014041594372727830
+      Terrain Sliced (16x16)_126: -5728145629136226796
+      Terrain Sliced (16x16)_55: -6189402959655295490
+      Terrain Sliced (16x16)_58: -3515048725455381280
+      Terrain Sliced (16x16)_143: 3969312238262035163
+      Terrain Sliced (16x16)_48: 1148126818157445405
+      Terrain Sliced (16x16)_66: 2267142116904711172
+      Terrain Sliced (16x16)_34: 7850876452835428796
+      Terrain Sliced (16x16)_121: -2358511399047075428
+      Terrain Sliced (16x16)_65: 4940259601065374553
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
