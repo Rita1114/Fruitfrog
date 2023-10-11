@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using System.Linq;
 
 public class Getnewapi : MonoBehaviour
 {
@@ -31,12 +32,27 @@ public class Getnewapi : MonoBehaviour
         {
             string responsedate = webRequest.downloadHandler.text;
 
-            content.text = responsedate;
+            List<MyDate> myDates = JsonUtility.FromJson<List<MyDate>>(responsedate);
+           
+            myDates = myDates.OrderBy(date => date.Password).ToList();
+            
+            foreach (MyDate date in myDates)
+            {
+                Debug.Log("name:" + date.ID + ", uid" +date.Uid);
+            }
+
+            content.text =responsedate;
         }
         else
         {
             
             Debug.Log("Error"+webRequest.error);
         }
+    }
+    public class MyDate
+    {
+        public string ID { get; set;}
+        public string Uid { get; set; }
+        public int Password { get; set; }
     }
 }
