@@ -180,11 +180,8 @@ public class player : MonoBehaviour
       //印出Trigger -觸發:碰撞物件的名字
      
       if (Coll.gameObject.tag =="B1")
-      { 
-        if (Disanimtor!=null)
-        {
-          Disanimtor.SetTrigger("collected");
-        }
+      {
+        Disanimtor.SetBool("collected",true);
         //Destroy(Coll.gameObject);
         s += 1;
         Debug.Log(s);
