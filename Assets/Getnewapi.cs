@@ -44,8 +44,9 @@ public class Getnewapi : MonoBehaviour
             {
                 Debug.Log("name:" + date.ID + ", uid" +date.Uid);
             }
+            Debug.Log(responsedate);
 
-            content.text =myDates.ToString();
+            content.text = responsedate;
         }
         else
         {

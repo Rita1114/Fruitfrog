@@ -44,9 +44,9 @@ public class player : MonoBehaviour
      public void ControlSpeed()
       { 
         speedX = playerRigidbody2D.velocity.x;
-       speedY = playerRigidbody2D.velocity.y;
-       float newSpeedX=Mathf.Clamp(speedX, -maxSpeedX, maxSpeedX);
-       playerRigidbody2D.velocity = new Vector2(newSpeedX,speedY);
+        speedY = playerRigidbody2D.velocity.y;
+        float newSpeedX=Mathf.Clamp(speedX, -maxSpeedX, maxSpeedX);
+        playerRigidbody2D.velocity = new Vector2(newSpeedX,speedY);
       }
      [Header("垂直向上推力")]
        public float yForce;

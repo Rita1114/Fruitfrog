@@ -11,7 +11,6 @@ public class InstantiateCanvasOnClick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
         //按下按鈕時，呼叫ClickEvent()
         GetComponent<Button>().onClick.AddListener(() =>
         {
