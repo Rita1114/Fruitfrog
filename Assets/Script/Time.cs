@@ -9,15 +9,11 @@ public class Time : MonoBehaviour
     public int time_int = 30;//時間
     public Text Time_UI;
     public GameObject player,OverCanvas;
-    
-    
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("timer", 1, 1);
- 
-        
+        InvokeRepeating("timer", 1, 1);  
     }
    
     void timer()
