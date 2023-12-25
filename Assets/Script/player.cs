@@ -20,10 +20,6 @@ public class player : MonoBehaviour
     private Animator animator;
     public Animator Disanimtor;
 
-
-
-
-
     [Header("目前的水平速度")]
     int key =0;
     public float speedX;
@@ -34,10 +30,8 @@ public class player : MonoBehaviour
     [Header("水平推力")]
     [Range(0,150)]
     public float xForce;
-
     //目前垂直速度
      float speedY;
-
      [Header("最大水平速度")]
      public float maxSpeedX;
      

@@ -30,7 +30,7 @@ public class BoardMove : MonoBehaviour
     {
         canvasGroup.alpha = 1f;
         rectTransform.transform.localPosition = new Vector3(0, 0, 0);
-        rectTransform.DOAnchorPos(new Vector2(752, 0),fadetime,false).SetEase(Ease.InElastic);
+        rectTransform.DOAnchorPos(new Vector2(2415, 0),fadetime,false).SetEase(Ease.InElastic);
         canvasGroup.DOFade(0, fadetime);
     }
 }

@@ -24,8 +24,7 @@ public class Time : MonoBehaviour
         {
             //Time_UI.text = "Time\nup";
 
-        }
-        
+        }   
     }
 
  
@@ -38,13 +37,10 @@ public class Time : MonoBehaviour
             player.SetActive(false);
             OverCanvas.SetActive(true);
 
-
             if (Input.GetKey(KeyCode.R))
             {
                 player.SetActive(true);
                 player.transform.position = new Vector3(0, 0, 0);
-                
-                
             }
         }
 

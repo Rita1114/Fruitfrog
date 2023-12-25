@@ -12,7 +12,6 @@ public class FadeCanvas : MonoBehaviour
     {
         
     }
-
     // Update is called once per frame
     void Update()
     {
